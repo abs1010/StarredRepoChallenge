@@ -1,0 +1,6 @@
+framework module Pods_StarredRepoChallenge {
+  umbrella header "Pods-StarredRepoChallenge-umbrella.h"
+
+  export *
+  module * { export * }
+}

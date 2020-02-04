@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1025B6B8299E99551D969007 /* Pods_StarredRepoChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03ED0BF0D23E073634DE2FC6 /* Pods_StarredRepoChallenge.framework */; };
+		850B4B17AEBD7BB8919B5C91 /* Pods_StarredRepoChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FFF643170DF33FA82CC273 /* Pods_StarredRepoChallengeTests.framework */; };
 		BC20C01A23E7A8A9008CC191 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC20C01923E7A8A9008CC191 /* AppDelegate.swift */; };
 		BC20C01C23E7A8A9008CC191 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC20C01B23E7A8A9008CC191 /* SceneDelegate.swift */; };
 		BC20C01E23E7A8A9008CC191 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC20C01D23E7A8A9008CC191 /* ViewController.swift */; };
@@ -14,6 +16,12 @@
 		BC20C02323E7A8AA008CC191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC20C02223E7A8AA008CC191 /* Assets.xcassets */; };
 		BC20C02623E7A8AA008CC191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC20C02423E7A8AA008CC191 /* LaunchScreen.storyboard */; };
 		BC20C03123E7A8AB008CC191 /* StarredRepoChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC20C03023E7A8AB008CC191 /* StarredRepoChallengeTests.swift */; };
+		BC20C04123E7AA38008CC191 /* repoDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC20C04023E7AA38008CC191 /* repoDataProvider.swift */; };
+		BCB977CB23E88E2F00016167 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB977CA23E88E2F00016167 /* Repo.swift */; };
+		BCB977CD23E8C57000016167 /* RepoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB977CC23E8C57000016167 /* RepoController.swift */; };
+		BCE9340023E90B26009EFB38 /* RepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE933FE23E90B26009EFB38 /* RepoCell.xib */; };
+		BCE9340123E90B26009EFB38 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE933FF23E90B26009EFB38 /* RepoCell.swift */; };
+		BCE9819423EA168D0013F5BD /* viewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE9819323EA168D0013F5BD /* viewControllerSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03ED0BF0D23E073634DE2FC6 /* Pods_StarredRepoChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarredRepoChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44FFF643170DF33FA82CC273 /* Pods_StarredRepoChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarredRepoChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E868A1E5F2F20AB26D211D /* Pods-StarredRepoChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarredRepoChallenge.release.xcconfig"; path = "Target Support Files/Pods-StarredRepoChallenge/Pods-StarredRepoChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		6715735402C94840A4663A4D /* Pods-StarredRepoChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarredRepoChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-StarredRepoChallengeTests/Pods-StarredRepoChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		937DA102BF931117A1E5E40F /* Pods-StarredRepoChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarredRepoChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-StarredRepoChallengeTests/Pods-StarredRepoChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		BABCCAB022B66D24D10BE44E /* Pods-StarredRepoChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarredRepoChallenge.debug.xcconfig"; path = "Target Support Files/Pods-StarredRepoChallenge/Pods-StarredRepoChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		BC20C01623E7A8A9008CC191 /* StarredRepoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarredRepoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC20C01923E7A8A9008CC191 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC20C01B23E7A8A9008CC191 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +52,12 @@
 		BC20C02C23E7A8AB008CC191 /* StarredRepoChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarredRepoChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC20C03023E7A8AB008CC191 /* StarredRepoChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarredRepoChallengeTests.swift; sourceTree = "<group>"; };
 		BC20C03223E7A8AB008CC191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC20C04023E7AA38008CC191 /* repoDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repoDataProvider.swift; sourceTree = "<group>"; };
+		BCB977CA23E88E2F00016167 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		BCB977CC23E8C57000016167 /* RepoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoController.swift; sourceTree = "<group>"; };
+		BCE933FE23E90B26009EFB38 /* RepoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepoCell.xib; sourceTree = "<group>"; };
+		BCE933FF23E90B26009EFB38 /* RepoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
+		BCE9819323EA168D0013F5BD /* viewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewControllerSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1025B6B8299E99551D969007 /* Pods_StarredRepoChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +73,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				850B4B17AEBD7BB8919B5C91 /* Pods_StarredRepoChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A27BBD61F7AF9D8E7096392 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03ED0BF0D23E073634DE2FC6 /* Pods_StarredRepoChallenge.framework */,
+				44FFF643170DF33FA82CC273 /* Pods_StarredRepoChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B8E95BA371FF2BB3C0239D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BABCCAB022B66D24D10BE44E /* Pods-StarredRepoChallenge.debug.xcconfig */,
+				52E868A1E5F2F20AB26D211D /* Pods-StarredRepoChallenge.release.xcconfig */,
+				6715735402C94840A4663A4D /* Pods-StarredRepoChallengeTests.debug.xcconfig */,
+				937DA102BF931117A1E5E40F /* Pods-StarredRepoChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BC20C00D23E7A8A9008CC191 = {
 			isa = PBXGroup;
 			children = (
 				BC20C01823E7A8A9008CC191 /* StarredRepoChallenge */,
 				BC20C02F23E7A8AB008CC191 /* StarredRepoChallengeTests */,
 				BC20C01723E7A8A9008CC191 /* Products */,
+				4B8E95BA371FF2BB3C0239D4 /* Pods */,
+				1A27BBD61F7AF9D8E7096392 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,12 +123,12 @@
 		BC20C01823E7A8A9008CC191 /* StarredRepoChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				BC20C01923E7A8A9008CC191 /* AppDelegate.swift */,
-				BC20C01B23E7A8A9008CC191 /* SceneDelegate.swift */,
-				BC20C01D23E7A8A9008CC191 /* ViewController.swift */,
-				BC20C01F23E7A8A9008CC191 /* Main.storyboard */,
+				BC20C03B23E7A8B1008CC191 /* Model */,
+				BC20C03C23E7A8B4008CC191 /* View */,
+				BC20C03E23E7A8BC008CC191 /* Controller */,
+				BC20C03D23E7A8B8008CC191 /* Networking */,
+				BC20C03F23E7A8D3008CC191 /* SuportingFiles */,
 				BC20C02223E7A8AA008CC191 /* Assets.xcassets */,
-				BC20C02423E7A8AA008CC191 /* LaunchScreen.storyboard */,
 				BC20C02723E7A8AA008CC191 /* Info.plist */,
 			);
 			path = StarredRepoChallenge;
@@ -94,9 +138,63 @@
 			isa = PBXGroup;
 			children = (
 				BC20C03023E7A8AB008CC191 /* StarredRepoChallengeTests.swift */,
+				BCE9819323EA168D0013F5BD /* viewControllerSpec.swift */,
 				BC20C03223E7A8AB008CC191 /* Info.plist */,
 			);
 			path = StarredRepoChallengeTests;
+			sourceTree = "<group>";
+		};
+		BC20C03B23E7A8B1008CC191 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCB977CA23E88E2F00016167 /* Repo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC20C03C23E7A8B4008CC191 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC20C01F23E7A8A9008CC191 /* Main.storyboard */,
+				BC20C01D23E7A8A9008CC191 /* ViewController.swift */,
+				BCE933F923E90AF4009EFB38 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC20C03D23E7A8B8008CC191 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BC20C04023E7AA38008CC191 /* repoDataProvider.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BC20C03E23E7A8BC008CC191 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BCB977CC23E8C57000016167 /* RepoController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC20C03F23E7A8D3008CC191 /* SuportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				BC20C02423E7A8AA008CC191 /* LaunchScreen.storyboard */,
+				BC20C01B23E7A8A9008CC191 /* SceneDelegate.swift */,
+				BC20C01923E7A8A9008CC191 /* AppDelegate.swift */,
+			);
+			path = SuportingFiles;
+			sourceTree = "<group>";
+		};
+		BCE933F923E90AF4009EFB38 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BCE933FF23E90B26009EFB38 /* RepoCell.swift */,
+				BCE933FE23E90B26009EFB38 /* RepoCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC20C03523E7A8AB008CC191 /* Build configuration list for PBXNativeTarget "StarredRepoChallenge" */;
 			buildPhases = (
+				14AD5EC73AA3E4684E60F953 /* [CP] Check Pods Manifest.lock */,
 				BC20C01223E7A8A9008CC191 /* Sources */,
 				BC20C01323E7A8A9008CC191 /* Frameworks */,
 				BC20C01423E7A8A9008CC191 /* Resources */,
+				1571AE72FC2E271D40FEF9B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC20C03823E7A8AB008CC191 /* Build configuration list for PBXNativeTarget "StarredRepoChallengeTests" */;
 			buildPhases = (
+				3E5F2FF0A32745D0C4FAD295 /* [CP] Check Pods Manifest.lock */,
 				BC20C02823E7A8AB008CC191 /* Sources */,
 				BC20C02923E7A8AB008CC191 /* Frameworks */,
 				BC20C02A23E7A8AB008CC191 /* Resources */,
+				B323B35CA6BA52725C2FB7A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +285,7 @@
 				BC20C02623E7A8AA008CC191 /* LaunchScreen.storyboard in Resources */,
 				BC20C02323E7A8AA008CC191 /* Assets.xcassets in Resources */,
 				BC20C02123E7A8A9008CC191 /* Main.storyboard in Resources */,
+				BCE9340023E90B26009EFB38 /* RepoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,12 +298,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14AD5EC73AA3E4684E60F953 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StarredRepoChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1571AE72FC2E271D40FEF9B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarredRepoChallenge/Pods-StarredRepoChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarredRepoChallenge/Pods-StarredRepoChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StarredRepoChallenge/Pods-StarredRepoChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E5F2FF0A32745D0C4FAD295 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StarredRepoChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B323B35CA6BA52725C2FB7A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarredRepoChallengeTests/Pods-StarredRepoChallengeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarredRepoChallengeTests/Pods-StarredRepoChallengeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StarredRepoChallengeTests/Pods-StarredRepoChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC20C01223E7A8A9008CC191 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC20C04123E7AA38008CC191 /* repoDataProvider.swift in Sources */,
+				BCE9340123E90B26009EFB38 /* RepoCell.swift in Sources */,
+				BCB977CD23E8C57000016167 /* RepoController.swift in Sources */,
 				BC20C01E23E7A8A9008CC191 /* ViewController.swift in Sources */,
+				BCB977CB23E88E2F00016167 /* Repo.swift in Sources */,
 				BC20C01A23E7A8A9008CC191 /* AppDelegate.swift in Sources */,
 				BC20C01C23E7A8A9008CC191 /* SceneDelegate.swift in Sources */,
 			);
@@ -211,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC20C03123E7A8AB008CC191 /* StarredRepoChallengeTests.swift in Sources */,
+				BCE9819423EA168D0013F5BD /* viewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +549,7 @@
 		};
 		BC20C03623E7A8AB008CC191 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BABCCAB022B66D24D10BE44E /* Pods-StarredRepoChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +568,7 @@
 		};
 		BC20C03723E7A8AB008CC191 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52E868A1E5F2F20AB26D211D /* Pods-StarredRepoChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +587,7 @@
 		};
 		BC20C03923E7A8AB008CC191 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6715735402C94840A4663A4D /* Pods-StarredRepoChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +610,7 @@
 		};
 		BC20C03A23E7A8AB008CC191 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 937DA102BF931117A1E5E40F /* Pods-StarredRepoChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
