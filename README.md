@@ -7,3 +7,11 @@ The app shows the results in a tableView with custon cells with the repo name, #
 It is possible to pull to refresh the data.
 
 I am still implementing the unit tests
+
+
+#############
+
+URLSession
+@codable
+delegate
+MVC
