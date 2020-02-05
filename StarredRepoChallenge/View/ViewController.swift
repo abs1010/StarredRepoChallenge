@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
 
     var refreshControl : UIRefreshControl?
     
@@ -18,10 +18,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        showLoading()
         // Do any additional setup after loading the view.
         self.addRefreshingControl()
         
         self.controller.delegate = self
+        
         self.controller.setupController()
         
         //Delegate and Datasource
@@ -69,6 +72,12 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
     
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+    }
+    
 }
 
 extension ViewController : RepoControllerDelegate {
@@ -76,6 +85,7 @@ extension ViewController : RepoControllerDelegate {
     func successOnLoadingRepositories(repo: [Item]) {
         
         DispatchQueue.main.async {
+            self.hideLoading()
             self.repoTableView.reloadData()
             print("Passei pelo delegate ViewController")
         }
@@ -83,7 +93,21 @@ extension ViewController : RepoControllerDelegate {
     }
     
     func errorOnOnLoadingRepositories(error: errorCodes) {
+        
+        hideLoading()
         print("Erro ao carregar")
+        
+        DispatchQueue.main.async {
+            
+            let alerta = UIAlertController(title: "Erro", message: "Problema ao carregar os dados do GitHub \n Erro:\(error).0", preferredStyle: .alert)
+            let btnOk = UIAlertAction(title: "Ok", style: .destructive, handler: nil)
+            
+            alerta.addAction(btnOk)
+            
+            self.present(alerta, animated: true)
+            
+        }
+        
     }
     
 }

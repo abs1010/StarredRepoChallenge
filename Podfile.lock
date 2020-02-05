@@ -4,6 +4,7 @@ PODS:
   - iOSSnapshotTestCase/Core (6.2.0)
   - iOSSnapshotTestCase/SwiftSupport (6.2.0):
     - iOSSnapshotTestCase/Core
+  - lottie-ios (3.1.6)
   - Nimble (8.0.5)
   - Nimble-Snapshots (8.1.1):
     - Nimble-Snapshots/Core (= 8.1.1)
@@ -16,6 +17,7 @@ PODS:
   - SDWebImage/Core (5.4.0)
 
 DEPENDENCIES:
+  - lottie-ios
   - Nimble
   - Nimble-Snapshots
   - Quick
@@ -24,6 +26,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - iOSSnapshotTestCase
+    - lottie-ios
     - Nimble
     - Nimble-Snapshots
     - Quick
@@ -31,11 +34,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   iOSSnapshotTestCase: 9ab44cb5aa62b84d31847f40680112e15ec579a6
+  lottie-ios: 85ce835dd8c53e02509f20729fc7d6a4e6645a0a
   Nimble: 4ab1aeb9b45553c75b9687196b0fa0713170a332
   Nimble-Snapshots: 5058fb9b459e64371f54a0f8d9dde6f33db490a0
   Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
   SDWebImage: 5bf6aec6481ae2a062bdc59f9d6c1d1e552090e0
 
-PODFILE CHECKSUM: 5f0b404d3939a0ae3af64aa07b3353d8a5a7f486
+PODFILE CHECKSUM: 8d2578225a3615a01b93a551f4b1a10474424b42
 
 COCOAPODS: 1.8.4

@@ -8,9 +8,10 @@ target 'StarredRepoChallenge' do
   # Pods for StarredRepoChallenge
 
   pod 'SDWebImage', '~> 5.0'
+  pod 'lottie-ios'
   
   target 'StarredRepoChallengeTests' do
-    inherit! :search_paths
+    # inherit! :search_paths
     # Pods for testing
     pod 'Quick'
     pod 'Nimble'
